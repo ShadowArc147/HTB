@@ -1,0 +1,74 @@
+.class public Lcom/facebook/react/bridge/BaseActivityEventListener;
+.super Ljava/lang/Object;
+.source "BaseActivityEventListener.java"
+
+# interfaces
+.implements Lcom/facebook/react/bridge/ActivityEventListener;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onActivityResult(IILandroid/content/Intent;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    return-void
+.end method
+
+.method public onActivityResult(Landroid/app/Activity;IILandroid/content/Intent;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public onNewIntent(Landroid/content/Intent;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
+
+    return-void
+.end method

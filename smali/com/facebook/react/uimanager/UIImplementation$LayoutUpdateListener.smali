@@ -1,0 +1,27 @@
+.class public interface abstract Lcom/facebook/react/uimanager/UIImplementation$LayoutUpdateListener;
+.super Ljava/lang/Object;
+.source "UIImplementation.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/facebook/react/uimanager/UIImplementation;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "LayoutUpdateListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onLayoutUpdated(Lcom/facebook/react/uimanager/ReactShadowNode;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "root"
+        }
+    .end annotation
+.end method

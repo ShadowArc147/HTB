@@ -1,0 +1,25 @@
+.class public interface abstract Lcom/facebook/hermes/instrumentation/HermesMemoryDumper;
+.super Ljava/lang/Object;
+.source "HermesMemoryDumper.java"
+
+
+# virtual methods
+.method public abstract getId()Ljava/lang/String;
+.end method
+
+.method public abstract getInternalStorage()Ljava/lang/String;
+.end method
+
+.method public abstract setMetaData(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "crashId"
+        }
+    .end annotation
+.end method
+
+.method public abstract shouldSaveSnapshot()Z
+.end method
